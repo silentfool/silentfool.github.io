@@ -128,7 +128,7 @@ body::before {
 
 .hero-h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(5rem, 13vw, 12rem);
+  font-size: clamp(5rem, 12vw, 12rem);
   line-height: .88;
   color: var(--white);
   letter-spacing: .02em;
