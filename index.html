@@ -3,244 +3,275 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SILENTFOOL — DAVE KENDALL</title>
+  <title>Dave Kendall — silentfool</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne+Mono&family=Syne:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shippori+Mincho:wght@400;700;800&family=Syne+Mono&family=Syne:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div id="cur"></div>
   <div id="cur-ring"></div>
+  <div class="kanji-bg" aria-hidden="true">経験</div>
+
+  <!-- ══ NAV ══ -->
+  <header class="site-nav">
+    <span class="nav-logo">silentfool</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <!-- ══ HERO ══ -->
   <section class="hero">
-    <div class="hero-block"></div>
-
-    <nav class="hero-topbar">
-      <span class="topbar-logo">silentfool.com</span>
-      <ul class="topbar-nav">
-        <li><a href="#disciplines">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero-body">
-      <p class="hero-eyebrow">Dave Kendall — est. 1980</p>
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Dave Kendall · Cincinnati, OH</p>
       <h1 class="hero-h1">
-        <span class="line"><span class="red">SILENT</span></span>
-        <span class="line">FOOL</span>
+        <span class="line">Audio.</span>
+        <span class="line">Design.</span>
+        <span class="line red-line">Builder.</span>
       </h1>
-      <p class="hero-tagline">Designer &nbsp;·&nbsp; Entrepreneur &nbsp;·&nbsp; Sound Engineer</p>
+      <div class="hero-body">
+        <p class="hero-intro">
+          Hey — I'm Dave. I lead audio teams in one of the biggest churches in America, build accessibility hardware in my garage, and have performed on stage across North America and Europe. My through-line is simple: <em>design experiences that empower people.</em>
+        </p>
+        <div class="hero-ctas">
+          <a href="#work" class="btn-primary">See my work</a>
+          <a href="#contact" class="btn-ghost">Get in touch ↓</a>
+        </div>
+      </div>
     </div>
-
-    <div class="hero-bottom">
-      <p class="hero-desc">
-        Making stuff and helping people<br>since circa 1980. Based in the space<br>between signal and noise.
-      </p>
-      <div class="scroll-cue">
-        <span class="scroll-cue-line"></span>
-        scroll
+    <div class="hero-aside">
+      <div class="aside-block">
+        <span class="aside-num">10+</span>
+        <span class="aside-label">Years at Crossroads</span>
+      </div>
+      <div class="aside-block">
+        <span class="aside-num">10k+</span>
+        <span class="aside-label">Weekly listeners</span>
+      </div>
+      <div class="aside-block">
+        <span class="aside-num">20+</span>
+        <span class="aside-label">Years making things</span>
       </div>
     </div>
   </section>
 
-  <!-- ══ DISCIPLINES ══ -->
-  <section id="disciplines">
-    <div class="disc-header">
-      <p class="sec-label reveal">01 — Disciplines</p>
-      <h2 class="sec-title reveal">WHAT<br>I DO</h2>
+  <!-- ══ ABOUT ══ -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-left">
+        <p class="sec-eyebrow">01 — About</p>
+        <h2 class="sec-title">Who<br>I am.</h2>
+        <div class="about-photo-wrap">
+          <img src="headshot.jpg" alt="Dave Kendall" class="about-photo" />
+        </div>
+      </div>
+      <div class="about-right">
+        <p>I'm an audio professional, entrepreneur, and community builder passionate about creating experiences and products that make a real impact.</p>
+        <p>As <strong>Director of Site Audio at Crossroads Church</strong>, I lead FOH engineering across multiple campuses — guiding staff and volunteers, integrating immersive L-ISA systems, and building the culture and standards that make world-class production possible week after week.</p>
+        <p>Beyond the church, I founded <strong>Rapid Adapt LLC</strong> — a startup designing patent-pending accessibility products. Think machined aluminum pedal extensions that give shorter drivers comfort, safety, and independence behind the wheel. We're gearing up for crowdfunding and investor partnerships.</p>
+        <p>Whether it's mixing audio for thousands, prototyping adaptive hardware, or performing on stage — the mission is always the same: empower people and bring them closer to what matters most.</p>
+        <div class="tags">
+          <span>Live Sound</span>
+          <span>Industrial Design</span>
+          <span>Production Management</span>
+          <span>Accessibility</span>
+          <span>Entrepreneurship</span>
+          <span>Team Leadership</span>
+          <span>CAD / Fusion 360</span>
+          <span>Podcasting</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="disc-row reveal">
-      <span class="disc-name">Design</span>
-      <span class="disc-num">01</span>
-    </div>
-    <div class="disc-row reveal">
-      <span class="disc-name">Entrepreneurship</span>
-      <span class="disc-num">02</span>
-    </div>
-    <div class="disc-row reveal">
-      <span class="disc-name">Sound Engineering</span>
-      <span class="disc-num">03</span>
-    </div>
-    <div class="disc-row reveal">
-      <span class="disc-name">Building Things</span>
-      <span class="disc-num">04</span>
-    </div>
-    <div class="disc-row reveal">
-      <span class="disc-name">Helping People</span>
-      <span class="disc-num">05</span>
+  <!-- ══ TIMELINE ══ -->
+  <section class="section" id="timeline">
+    <div class="section-inner">
+      <p class="sec-eyebrow">02 — Timeline</p>
+      <h2 class="sec-title">Career<br>highlights.</h2>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2022 — Present</div>
+          <div class="tl-content">
+            <div class="tl-tag">Crossroads Church</div>
+            <h3 class="tl-title">Director of Site Audio</h3>
+            <p>Lead all aspects of audio production across one of the nation's largest multi-site churches. Oversee system design including immersive L-ISA installs, networked audio, and digital collaboration tools. Mentor a high-performing team of staff and volunteer engineers — fostering technical mastery and leadership growth.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2021 — Present</div>
+          <div class="tl-content">
+            <div class="tl-tag">Rapid Adapt LLC</div>
+            <h3 class="tl-title">Founder & Product Designer</h3>
+            <p>Designing and engineering patent-pending accessibility products for individuals with disabilities. Hands-on across the full stack — from concept sketches and CAD in Fusion 360 to machined aluminum prototypes. Preparing for crowdfunding and investor scale.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2015 — 2022</div>
+          <div class="tl-content">
+            <div class="tl-tag">Crossroads Church</div>
+            <h3 class="tl-title">Producer & Audio Engineer</h3>
+            <p>Spearheaded new technology evaluation and implementation for production. Launched Crossroads Gaming, growing the community 220% within two months. Managed audio for major live events and built deep expertise in podcasting, media production, and audio post.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2008 — 2014</div>
+          <div class="tl-content">
+            <div class="tl-tag">Church of Christ in Christian Union</div>
+            <h3 class="tl-title">Technical Director & Graphic Designer</h3>
+            <p>Implemented VoIP, automated lighting, and digital sound systems. Developed full-spectrum communications: branding, direct mail, and web. Built the technical and creative infrastructure from the ground up.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2004 — 2014</div>
+          <div class="tl-content">
+            <div class="tl-tag">Madison Square Garden Company</div>
+            <h3 class="tl-title">Principal Actor</h3>
+            <p>Performed in live stage productions alongside world-class performers and crews. Led team-building experiences to boost performance and morale. A decade of high-pressure live production — every night, no second takes.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2003 — 2006</div>
+          <div class="tl-content">
+            <div class="tl-tag">HIT Entertainment</div>
+            <h3 class="tl-title">Lead Character</h3>
+            <p>Performed and toured in live stage environments across North America and Europe. Developed adaptability and improvisational skills in a fast-paced, demanding touring production environment.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- ══ WORK ══ -->
-  <section class="section" id="work">
-    <p class="sec-label reveal">02 — Work</p>
-    <h2 class="sec-title reveal">PROJECTS</h2>
+  <section class="section section-dark" id="work">
+    <div class="section-inner">
+      <p class="sec-eyebrow">03 — Work</p>
+      <h2 class="sec-title">Projects &amp;<br>ventures.</h2>
 
-    <div class="work-grid reveal">
-      <a class="work-card" href="https://rapidadapt.co" target="_blank" rel="noopener">
-        <p class="card-num">001</p>
-        <h3 class="card-title">Rapid Adapt</h3>
-        <p class="card-desc">[Placeholder — one or two sentences describing what Rapid Adapt does and your role in it.]</p>
-        <span class="card-arrow">↗</span>
-      </a>
-      <div class="work-card">
-        <p class="card-num">002</p>
-        <h3 class="card-title">[Project Name]</h3>
-        <p class="card-desc">[Placeholder — describe another project, client, or venture here.]</p>
-        <span class="card-arrow">↗</span>
-      </div>
-      <div class="work-card">
-        <p class="card-num">003</p>
-        <h3 class="card-title">[Project Name]</h3>
-        <p class="card-desc">[Placeholder — audio work, design piece, or startup.]</p>
-        <span class="card-arrow">↗</span>
-      </div>
-      <div class="work-card">
-        <p class="card-num">004</p>
-        <h3 class="card-title">[Project Name]</h3>
-        <p class="card-desc">[Placeholder — keep or remove as needed.]</p>
-        <span class="card-arrow">↗</span>
+      <div class="work-grid">
+
+        <a class="work-card" href="https://rapidadapt.co" target="_blank" rel="noopener">
+          <div class="work-card-inner">
+            <div class="work-card-top">
+              <span class="work-num">001</span>
+              <span class="work-arrow">↗</span>
+            </div>
+            <h3 class="work-title">Rapid Adapt LLC</h3>
+            <p class="work-desc">Patent-pending pedal extensions machined from aluminum — giving shorter drivers safety, comfort, and independence. Accessibility hardware designed with industrial precision.</p>
+            <div class="work-tags"><span>Hardware</span><span>Accessibility</span><span>CAD</span></div>
+          </div>
+        </a>
+
+        <div class="work-card">
+          <div class="work-card-inner">
+            <div class="work-card-top">
+              <span class="work-num">002</span>
+            </div>
+            <h3 class="work-title">Crossroads Audio</h3>
+            <p class="work-desc">Built and lead a production system spanning multiple campuses, immersive L-ISA environments, and hundreds of volunteer engineers. One of the most technically sophisticated church audio operations in the country.</p>
+            <div class="work-tags"><span>Live Sound</span><span>L-ISA</span><span>Leadership</span></div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-card-inner">
+            <div class="work-card-top">
+              <span class="work-num">003</span>
+            </div>
+            <h3 class="work-title">Crossroads Gaming</h3>
+            <p class="work-desc">Launched and grew a gaming community from zero — 220% growth in two months. Strategy, production, and community design built from scratch inside one of the country's largest churches.</p>
+            <div class="work-tags"><span>Community</span><span>Strategy</span><span>Production</span></div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-card-inner">
+            <div class="work-card-top">
+              <span class="work-num">004</span>
+            </div>
+            <h3 class="work-title">Live Performance</h3>
+            <p class="work-desc">A decade performing with Madison Square Garden and HIT Entertainment — touring North America and Europe in high-production live shows. Built instincts for audience, energy, and real-time adaptability that still shape everything I do.</p>
+            <div class="work-tags"><span>Performance</span><span>Live Events</span><span>Touring</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- ══ CONTACT ══ -->
   <section class="section" id="contact">
-    <div class="inner">
-      <p class="sec-label reveal">03 — Contact</p>
-      <h2 class="contact-title reveal">LET'S<br><span class="red">TALK.</span></h2>
-      <div class="contact-links">
-        <a class="contact-link reveal" href="mailto:silentfool@gmail.com">
-          silentfool@gmail.com
-          <span class="arrow">↗</span>
-        </a>
-        <a class="contact-link reveal" href="https://rapidadapt.co" target="_blank" rel="noopener">
-          rapidadapt.co
-          <span class="arrow">↗</span>
-        </a>
+    <div class="section-inner contact-inner">
+      <div class="contact-left">
+        <p class="sec-eyebrow">04 — Contact</p>
+        <h2 class="sec-title contact-title">Let's<br>build<br><span class="red-text">something.</span></h2>
+      </div>
+      <div class="contact-right">
+        <p class="contact-sub">Got a project, a problem worth solving, or just want to talk audio and hardware? I'm always up for a good conversation.</p>
+        <div class="contact-links">
+          <a href="mailto:silentfool@gmail.com" class="contact-link">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-val">silentfool@gmail.com <span class="arr">↗</span></span>
+          </a>
+          <a href="https://rapidadapt.co" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-label">Company</span>
+            <span class="contact-link-val">rapidadapt.co <span class="arr">↗</span></span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <span class="footer-left">© Dave Kendall — silentfool</span>
-    <span class="footer-right">silentfool.com</span>
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <span>© Dave Kendall</span>
+    <span class="footer-kanji">静 愚</span>
+    <span>silentfool.com</span>
   </footer>
 
   <script>
-    // cursor
+    // Custom cursor
     const cur = document.getElementById('cur');
     const ring = document.getElementById('cur-ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-
+    let mx=0, my=0, rx=0, ry=0;
     document.addEventListener('mousemove', e => {
-      mx = e.clientX;
-      my = e.clientY;
-      cur.style.left = mx + 'px';
-      cur.style.top  = my + 'px';
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx+'px'; cur.style.top = my+'px';
     });
-
     (function loop() {
-      rx += (mx - rx) * .1;
-      ry += (my - ry) * .1;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
+      rx += (mx-rx)*.1; ry += (my-ry)*.1;
+      ring.style.left = rx+'px'; ring.style.top = ry+'px';
       requestAnimationFrame(loop);
     })();
-
-    document.querySelectorAll('a, .disc-row, .work-card').forEach(el => {
+    document.querySelectorAll('a, .work-card').forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
     });
 
-    // scroll reveal
+    // Scroll reveal
     const obs = new IntersectionObserver(entries => {
       entries.forEach((e, i) => {
         if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('on'), i * 70);
+          setTimeout(() => e.target.classList.add('on'), i * 100);
           obs.unobserve(e.target);
         }
       });
-    }, { threshold: 0.1 });
-
+    }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-    // ── TEXT SCRAMBLE ────────────────────────────────────────
-    {
-      const GLYPHS = 'アイウエカキクセタチ!—=+*^?#01';
-
-      function scramble(el, delay) {
-        const text = el.textContent;
-        const len  = text.length;
-        const dur  = 750 + len * 32;
-
-        setTimeout(() => {
-          let t0 = null;
-          (function tick(ts) {
-            if (!t0) t0 = ts;
-            const p    = Math.min((ts - t0) / dur, 1);
-            const done = Math.floor(p * len);
-            let out = '';
-            for (let i = 0; i < len; i++) {
-              if (!/[a-zA-Z0-9]/.test(text[i])) { out += text[i]; continue; }
-              out += i < done
-                ? text[i]
-                : `<span class="sc">${GLYPHS[Math.floor(Math.random() * GLYPHS.length)]}</span>`;
-            }
-            el.innerHTML = out;
-            p < 1 ? requestAnimationFrame(tick) : (el.textContent = text);
-          })();
-        }, delay);
-      }
-
-      scramble(document.querySelector('.hero-eyebrow'), 300);
-      scramble(document.querySelector('.hero-tagline'), 820);
-    }
-
-    // ── MAGNETIC ELEMENTS ────────────────────────────────────
-    {
-      function magnetic(el, pull) {
-        el.addEventListener('mousemove', e => {
-          const r = el.getBoundingClientRect();
-          const x = (e.clientX - r.left - r.width  / 2) * pull;
-          const y = (e.clientY - r.top  - r.height / 2) * pull;
-          el.style.transition = 'transform .08s linear';
-          el.style.transform  = `translate(${x}px,${y}px)`;
-        });
-        el.addEventListener('mouseleave', () => {
-          el.style.transition = 'transform .7s cubic-bezier(.22,1,.36,1)';
-          el.style.transform  = '';
-        });
-      }
-
-      document.querySelectorAll('.topbar-nav a').forEach(el => magnetic(el, 0.45));
-      document.querySelectorAll('.contact-link').forEach(el  => magnetic(el, 0.18));
-    }
-
-    // ── HERO PARALLAX ────────────────────────────────────────
-    {
-      const hero  = document.querySelector('.hero');
-      const block = document.querySelector('.hero-block');
-
-      setTimeout(() => {
-        hero.addEventListener('mousemove', e => {
-          const dx = (e.clientX / window.innerWidth  - .5) * 2;
-          const dy = (e.clientY / window.innerHeight - .5) * 2;
-          block.style.transform = `translate(${dx * -14}px,${dy * -9}px)`;
-        });
-
-        hero.addEventListener('mouseleave', () => {
-          block.style.transition = 'transform 1.2s cubic-bezier(.22,1,.36,1)';
-          block.style.transform  = '';
-          setTimeout(() => { block.style.transition = ''; }, 1200);
-        });
-      }, 1400);
-    }
   </script>
-
 </body>
 </html>
