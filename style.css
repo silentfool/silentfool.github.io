@@ -131,6 +131,7 @@ body::before {
   color: var(--cream-dim);
   text-decoration: none;
   transition: color .2s;
+  display: inline-block; /* required for magnetic transform */
 }
 
 .topbar-nav a:hover { color: var(--cream); }
@@ -604,6 +605,9 @@ footer {
   transition: opacity .85s cubic-bezier(.22,1,.36,1), transform .85s cubic-bezier(.22,1,.36,1);
 }
 .reveal.on { opacity: 1; transform: none; }
+
+/* scramble glyph colour */
+.sc { color: var(--red); }
 
 /* ══════════════════════════════
    RESPONSIVE
