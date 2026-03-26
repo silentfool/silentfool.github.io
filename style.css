@@ -529,6 +529,35 @@ body::before {
 }
 .contact-link:hover .arr { opacity: 1; }
 
+/* ── Quote section ── */
+.section-quote {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.proverb {
+  margin: 0 auto;
+  max-width: 680px;
+}
+.proverb p {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-style: italic;
+  line-height: 1.75;
+  color: #3a1210;
+  margin-bottom: 1.25rem;
+}
+.proverb cite {
+  display: block;
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-style: normal;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--red);
+  opacity: .75;
+}
+
 /* ── FOOTER ── */
 .site-footer {
   border-top: 1px solid var(--border);
