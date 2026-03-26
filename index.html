@@ -3,215 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>silentfool — Dave Kendall</title>
+  <title>SILENTFOOL — DAVE KENDALL</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:       #0e0e0e;
-      --surface:  #161616;
-      --border:   #2a2a2a;
-      --text:     #e8e4dc;
-      --muted:    #6b6760;
-      --accent:   #c8b89a;
-      --link:     #d4c4a8;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Mono', monospace;
-      font-weight: 300;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 1.5rem;
-      /* subtle noise grain */
-      position: relative;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.6;
-    }
-
-    .card {
-      position: relative;
-      z-index: 1;
-      max-width: 580px;
-      width: 100%;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      padding: 3rem 3.5rem;
-      opacity: 0;
-      transform: translateY(18px);
-      animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
-    }
-
-    @keyframes rise {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .eyebrow {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1.6rem;
-    }
-
-    h1 {
-      font-family: 'DM Serif Display', serif;
-      font-weight: 400;
-      font-size: clamp(2.4rem, 6vw, 3.4rem);
-      line-height: 1.05;
-      color: var(--text);
-      margin-bottom: 0.25rem;
-    }
-
-    h1 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    .aka {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 2.2rem;
-    }
-
-    .divider {
-      width: 2.5rem;
-      height: 1px;
-      background: var(--border);
-      margin-bottom: 2rem;
-    }
-
-    .bio {
-      font-size: 0.88rem;
-      line-height: 1.85;
-      color: #c0bbb2;
-      margin-bottom: 2.8rem;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-    }
-
-    .link-row {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      text-decoration: none;
-      color: var(--link);
-      font-size: 0.78rem;
-      letter-spacing: 0.04em;
-      padding: 0.55rem 0;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s, color 0.2s;
-    }
-
-    .link-row:hover {
-      color: var(--text);
-      border-bottom-color: var(--border);
-    }
-
-    .link-icon {
-      width: 1rem;
-      height: 1rem;
-      opacity: 0.45;
-      flex-shrink: 0;
-      transition: opacity 0.2s;
-    }
-
-    .link-row:hover .link-icon {
-      opacity: 0.75;
-    }
-
-    .link-label {
-      flex: 1;
-    }
-
-    .link-arrow {
-      font-size: 0.7rem;
-      color: var(--muted);
-      transition: transform 0.2s, color 0.2s;
-    }
-
-    .link-row:hover .link-arrow {
-      transform: translateX(3px);
-      color: var(--accent);
-    }
-
-    footer {
-      position: relative;
-      z-index: 1;
-      margin-top: 2rem;
-      font-size: 0.6rem;
-      letter-spacing: 0.1em;
-      color: #3a3835;
-      text-align: center;
-    }
-
-    @media (max-width: 480px) {
-      .card { padding: 2rem 1.75rem; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shippori+Mincho:wght@400;700;800&family=Syne+Mono&family=Syne:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="card">
-    <p class="eyebrow">silentfool.com</p>
-    <h1><em>Dave</em> Kendall</h1>
-    <p class="aka">aka silentfool</p>
-    <div class="divider"></div>
-    <p class="bio">
-      Designer, Entrepreneur, Sound Engineer.<br>
-      Making stuff and helping people since circa 1980.
-    </p>
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
 
-    <nav class="links">
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-block"></div>
+    <div class="side-kanji">静<br>愚<br>作</div>
 
-      <a class="link-row" href="mailto:silentfool@gmail.com">
-        <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="2" y="4" width="20" height="16" rx="2"/>
-          <path d="M2 7l10 7 10-7"/>
-        </svg>
-        <span class="link-label">silentfool@gmail.com</span>
-        <span class="link-arrow">→</span>
-      </a>
-
-      <a class="link-row" href="https://rapidadapt.co" target="_blank" rel="noopener">
-        <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="10"/>
-          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-        </svg>
-        <span class="link-label">rapidadapt.co</span>
-        <span class="link-arrow">→</span>
-      </a>
-
+    <nav class="hero-topbar">
+      <span class="topbar-logo">silentfool.com</span>
+      <ul class="topbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#disciplines">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-  </div>
 
-  <footer>© Dave Kendall — silentfool</footer>
+    <div class="hero-body">
+      <p class="hero-eyebrow">Dave Kendall — est. 1980</p>
+      <h1 class="hero-h1">
+        <span class="line"><span class="red">SILENT</span></span>
+        <span class="line">FOOL</span>
+      </h1>
+      <p class="hero-tagline">Designer &nbsp;·&nbsp; Entrepreneur &nbsp;·&nbsp; Sound Engineer</p>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        Making stuff and helping people<br>since circa 1980. Based in the space<br>between signal and noise.
+      </p>
+      <div class="scroll-cue">
+        <span class="scroll-cue-line"></span>
+        scroll
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section" id="about">
+    <p class="sec-label reveal">01 — About</p>
+    <div class="inner">
+      <div class="about-left">
+        <h2 class="sec-title reveal">WHO<br>AM I</h2>
+        <blockquote class="about-pull reveal">
+          "Making stuff and helping people — that's always been the whole mission."
+        </blockquote>
+      </div>
+      <div class="about-body reveal">
+        <p>[Placeholder — add your origin story here. Where did you grow up, how did you get into design and sound? What drives the work you do?]</p>
+        <p>[Placeholder — a second paragraph. What have been your most formative projects or moments? What kinds of problems do you love solving?]</p>
+        <p>[Placeholder — third paragraph. Philosophy, craft, collaboration, creativity — what do you believe?]</p>
+      </div>
+    </div>
+
+    <div class="stats-grid reveal">
+      <div class="stat-box">
+        <div class="stat-num">45+</div>
+        <div class="stat-label">Years making things</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Problems worth solving</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Core disciplines</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">01</div>
+        <div class="stat-label">silentfool</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DISCIPLINES ══ -->
+  <section id="disciplines">
+    <div class="disc-header">
+      <p class="sec-label reveal">02 — Disciplines</p>
+      <h2 class="sec-title reveal">WHAT<br>I DO</h2>
+    </div>
+
+    <div class="disc-row reveal">
+      <span class="disc-name">Design</span>
+      <div class="disc-right">
+        <span class="disc-kanji">設計</span>
+        <span class="disc-num">01</span>
+      </div>
+    </div>
+    <div class="disc-row reveal">
+      <span class="disc-name">Entrepreneurship</span>
+      <div class="disc-right">
+        <span class="disc-kanji">起業</span>
+        <span class="disc-num">02</span>
+      </div>
+    </div>
+    <div class="disc-row reveal">
+      <span class="disc-name">Sound Engineering</span>
+      <div class="disc-right">
+        <span class="disc-kanji">音響</span>
+        <span class="disc-num">03</span>
+      </div>
+    </div>
+    <div class="disc-row reveal">
+      <span class="disc-name">Building Things</span>
+      <div class="disc-right">
+        <span class="disc-kanji">創造</span>
+        <span class="disc-num">04</span>
+      </div>
+    </div>
+    <div class="disc-row reveal">
+      <span class="disc-name">Helping People</span>
+      <div class="disc-right">
+        <span class="disc-kanji">支援</span>
+        <span class="disc-num">05</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WORK ══ -->
+  <section class="section" id="work">
+    <p class="sec-label reveal">03 — Work</p>
+    <h2 class="sec-title reveal">PROJECTS</h2>
+
+    <div class="work-grid reveal">
+      <a class="work-card" href="https://rapidadapt.co" target="_blank" rel="noopener">
+        <p class="card-num">001</p>
+        <h3 class="card-title">Rapid Adapt</h3>
+        <p class="card-desc">[Placeholder — one or two sentences describing what Rapid Adapt does and your role in it.]</p>
+        <span class="card-arrow">↗</span>
+      </a>
+      <div class="work-card">
+        <p class="card-num">002</p>
+        <h3 class="card-title">[Project Name]</h3>
+        <p class="card-desc">[Placeholder — describe another project, client, or venture here.]</p>
+        <span class="card-arrow">↗</span>
+      </div>
+      <div class="work-card">
+        <p class="card-num">003</p>
+        <h3 class="card-title">[Project Name]</h3>
+        <p class="card-desc">[Placeholder — audio work, design piece, or startup.]</p>
+        <span class="card-arrow">↗</span>
+      </div>
+      <div class="work-card">
+        <p class="card-num">004</p>
+        <h3 class="card-title">[Project Name]</h3>
+        <p class="card-desc">[Placeholder — keep or remove as needed.]</p>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section" id="contact">
+    <div class="inner">
+      <p class="sec-label reveal">04 — Contact</p>
+      <h2 class="contact-title reveal">LET'S<br><span class="red">TALK.</span></h2>
+      <div class="contact-links">
+        <a class="contact-link reveal" href="mailto:silentfool@gmail.com">
+          silentfool@gmail.com
+          <span class="arrow">↗</span>
+        </a>
+        <a class="contact-link reveal" href="https://rapidadapt.co" target="_blank" rel="noopener">
+          rapidadapt.co
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-left">© Dave Kendall — silentfool</span>
+    <span class="footer-kanji">静 愚 作</span>
+    <span class="footer-right">silentfool.com</span>
+  </footer>
+
+  <script>
+    // cursor
+    const cur = document.getElementById('cur');
+    const ring = document.getElementById('cur-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX;
+      my = e.clientY;
+      cur.style.left = mx + 'px';
+      cur.style.top  = my + 'px';
+    });
+
+    (function loop() {
+      rx += (mx - rx) * .1;
+      ry += (my - ry) * .1;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(loop);
+    })();
+
+    document.querySelectorAll('a, .disc-row, .work-card, .stat-box').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+    });
+
+    // scroll reveal
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('on'), i * 70);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
 
 </body>
 </html>
